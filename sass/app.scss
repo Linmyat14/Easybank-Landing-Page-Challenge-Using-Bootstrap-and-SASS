@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+$font-family-sans-serif: 'Public Sans', sans-serif;
+
+$primary: hsla(152, 100%, 50%, 1);
+$success: hsl(136, 65%, 51%);
+$info: hsl(192, 70%, 51%);
+$secondary: hsl(0, 0%, 98%);
+$primary-bg-subtle: hsl(0, 0%, 100%);
+$light: hsl(233, 8%, 62%); 
+$card-height: 540px;
+$dark: hsl(233, 26%, 24%);
+
+
+#hero {
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: right top;
+    background-position-x: 700px;
+    background-position-y: -100px;
+
+}
+.nav-tags{
+  color: $success;
+}
+.hero-img {
+  width: 100%;
+  position: relative;
+  left: 100px;
+}
+.request-btn{
+  background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  border: none;
+  transition: 1s ease-in-out;
+}
+.request-btn:hover{
+  opacity: 0.7;
+}
+.social-tags{
+  transition: 0.2s ease-in-out;
+}
+.social-tags:hover{
+  transform: translateY(-5px);
+}
+.footer-tags{
+  color: $secondary;
+  transition: 0.2s ease-in-out;
+}
+.footer-tags:hover{
+  color: $success;
+}
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 7,
+);
+
+@media screen and (max-width: 568px){
+    .hero-img {
+      background-image: url(../images/bg-intro-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: 120%;
+      background-position-x: 0px;
+      background-position-y: 110px;
+      width:  85% ;
+      position: relative;
+      left: 40px;
+    }
+}
+
+@media screen and (max-width: 992px){
+  .hero-img {
+    background-image: url(../images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position-x: -30px;
+    background-position-y: 90px;
+    width:  100% ;
+    position: relative;
+    left: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .hero-img {
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    // background-position: right top;
+    background-position-x: 0px;
+    background-position-y: 0px;
+  }
+}
+
+@import '../assets/bootstrap/scss/bootstrap.scss';
+
+
+
